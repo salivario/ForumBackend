@@ -40,12 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && $data !== null) {
                 echo json_encode(array(
                     "answer" => "успех!",
                     "token" => $jwt,
-                    "id" => $user["id"],
-                    "name" => $user["name"],
-                    "email" => $user["email"],
-                    "avatar" => $user["avatar"],
-                    "countOfMessages" => $user["count of messages"],
-                    "countOfTreads" => $user["count of treads"]
                 ));
             } else {
                 echo json_encode(array("message" => "Неверный пароль"));
